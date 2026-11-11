@@ -2,10 +2,10 @@
 
 
 # Base image: same as the CI builds and tests with, i.e. the published build of
-# scripts/docker/buildpack-deps/Dockerfile.ubuntu2404
-# (tag: ghcr.io/argotorg/solidity-buildpack-deps:ubuntu2404-8).
+# scripts/docker/buildpack-deps/Dockerfile.ubuntu2604
+# (tag: ghcr.io/argotorg/solidity-buildpack-deps:ubuntu2604-1).
 # Bump it together with CI.
-FROM ghcr.io/argotorg/solidity-buildpack-deps@sha256:2a8487a3f031000004dda3f16ac82115dd29f91b2dc91ff4f47cd6156ce5786c
+FROM ghcr.io/argotorg/solidity-buildpack-deps@sha256:b8d5580cc7d1034777b167c37e1bae8c43b374b3041618c183cf40b56cb74e1d
 
 ENV DEBIAN_FRONTEND=noninteractive \
     TERM=xterm \
