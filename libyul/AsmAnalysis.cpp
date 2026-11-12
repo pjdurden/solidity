@@ -471,7 +471,7 @@ size_t AsmAnalyzer::operator()(FunctionCall const& _funCall)
 						m_errorReporter.typeError(
 							3517_error,
 							nativeLocationOf(arg),
-							fmt::format("Unknown data object \"{}\".", formatLiteral(argumentAsLiteral))
+							fmt::format("Unknown data object {}.", util::escapeAndQuoteString(formatLiteral(argumentAsLiteral)))
 						);
 				}
 				else if (functionName.substr(0, "verbatim_"s.size()) == "verbatim_")

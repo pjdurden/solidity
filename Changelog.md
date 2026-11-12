@@ -11,6 +11,7 @@ Compiler Features:
 Bugfixes:
 * SMTChecker: Fix false negative in CHC engine when a function from abstract base is called externally using `this`.
 * SMTChecker: Fix empty tuples being printed as an undeclared constant in SMT-LIB queries, which made the solver reject every query of the affected contract.
+* Yul: Escape the name in the "Unknown data object" error so that names that are not valid UTF-8 no longer make Standard JSON output fail with "Error writing output JSON".
 
 
 ### 0.8.38 (2026-10-22)

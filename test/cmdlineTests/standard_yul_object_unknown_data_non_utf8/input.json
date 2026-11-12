@@ -1,0 +1,17 @@
+{
+	"language": "Yul",
+	"sources":
+	{
+		"A":
+		{
+			"content": "object \"A\" { code { pop(datasize(\"\\xff\")) } }"
+		}
+	},
+	"settings":
+	{
+		"outputSelection":
+		{
+			"*": { "*": ["*"], "": [ "*" ] }
+		}
+	}
+}
